@@ -31,7 +31,6 @@ const Home = (props) => {
 };
 
 Home.propTypes = {
-  // title: PropTypes.string,
   heading: PropTypes.string,
   p1: PropTypes.string,
   beforeLink: PropTypes.string,
@@ -44,7 +43,6 @@ Home.propTypes = {
 };
 
 export default connect(state => ({
-  // title: state.router.result.title,
   heading: state.router.result.heading,
   p1: state.router.result.p1,
   beforeLink: state.router.result.beforeLink,

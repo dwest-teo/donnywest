@@ -12,7 +12,6 @@ import ikeSSLg from './assets/ike-ss-lg.jpg';
 const routes = {
   '/': {
     component: 'HOME',
-    title: 'Donny West | Front End Engineer, JavaScript Developer, Web/Mobile Pro',
     heading: 'I\'m Donny West.',
     p1: 'I\'m a full-stack developer focused on building modern, lightweight, modular systems for the web and mobile.  I create solutions that solve problems for organizations and improve experiences for users.  Every day I try to leave the web a little faster, friendlier, and better than the way I found it.',
     beforeLink: 'Currently, I\'m the lead front-end engineer at',
@@ -25,7 +24,6 @@ const routes = {
   },
   '/about/': {
     component: 'ABOUT',
-    title: 'Donny West - About | Front End Engineer, JavaScript Developer, Web/Mobile Pro',
     heading: 'About Me',
     sections: [
       {
@@ -82,7 +80,6 @@ const routes = {
   },
   '/projects/': {
     component: 'PROJECTS',
-    title: 'Donny West - About | Front End Engineer, JavaScript Developer, Web/Mobile Pro',
     heading: 'Projects',
     projects: [
       {

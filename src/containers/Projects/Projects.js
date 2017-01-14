@@ -56,7 +56,6 @@ const Projects = (props) => {
 };
 
 Projects.propTypes = {
-  // title: PropTypes.string,
   heading: PropTypes.string,
   projects: PropTypes.arrayOf(
     PropTypes.shape({
@@ -75,7 +74,6 @@ Projects.propTypes = {
 };
 
 export default connect(state => ({
-  // title: state.router.result.title,
   heading: state.router.result.heading,
   projects: state.router.result.projects,
   moreToCome: state.router.result.moreToCome,

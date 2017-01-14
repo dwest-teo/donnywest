@@ -35,7 +35,6 @@ const About = (props) => {
 };
 
 About.propTypes = {
-  // title: PropTypes.string,
   heading: PropTypes.string,
   sections: PropTypes.arrayOf(
     PropTypes.shape({
@@ -50,7 +49,6 @@ About.propTypes = {
 };
 
 export default connect(state => ({
-  // title: state.router.result.title,
   heading: state.router.result.heading,
   sections: state.router.result.sections,
 }))(About);

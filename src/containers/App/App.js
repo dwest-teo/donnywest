@@ -14,6 +14,10 @@ import { loadedApp } from '../../actions/App';
 import './App.css';
 
 class App extends Component {
+  componentDidMount() {
+    this.props.loadedApp();
+  }
+
   render() {
     return (
       <Fragment forRoute="/">
@@ -30,7 +34,7 @@ class App extends Component {
                 <Projects />
               </Fragment>
             </div>
-          <Footer component={this.props.component} />
+          <Footer />
         </div>
       </Fragment>
     );
@@ -40,6 +44,7 @@ class App extends Component {
 App.propTypes = {
   loaded: PropTypes.bool,
   component: PropTypes.string,
+  loadedApp: PropTypes.func,
 };
 
 export default connect(state => ({
