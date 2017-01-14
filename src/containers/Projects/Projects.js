@@ -1,8 +1,6 @@
 import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
 
-import './Projects.css';
-
 const Projects = (props) => {
   const { heading, projects, moreToCome } = props;
   return (

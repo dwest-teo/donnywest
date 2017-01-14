@@ -1,8 +1,6 @@
 import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
 
-import './Home.css';
-
 const Home = (props) => {
   const { heading, p1, beforeLink, afterLink, link } = props;
 

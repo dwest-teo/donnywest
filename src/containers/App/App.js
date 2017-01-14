@@ -11,8 +11,6 @@ import Projects from '../Projects/Projects';
 
 import { loadedApp } from '../../actions/App';
 
-import './App.css';
-
 class App extends Component {
   componentDidMount() {
     this.props.loadedApp();

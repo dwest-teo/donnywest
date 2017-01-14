@@ -1,8 +1,6 @@
 import React, { PropTypes } from 'react';
 import { Link } from 'redux-little-router';
 
-import './Header.css';
-
 const linkSx = 'link dim f6 f5-ns dib';
 
 const Header = ({ component }) => (

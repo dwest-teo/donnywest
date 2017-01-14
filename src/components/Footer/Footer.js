@@ -1,7 +1,5 @@
 import React from 'react';
 
-import './Footer.css';
-
 const Footer = () => (
   <footer className="pa3 ph5-ns pv4-ns b--black-10 black-70">
     <h4 className="black-70 b f4 f3-ns measure-narrow lh-copy mt0 mb2">Get in touch:</h4>
