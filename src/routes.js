@@ -1,3 +1,14 @@
+import teoSS from './assets/teo-ss.jpg';
+import teoSSLg from './assets/teo-ss-lg.jpg';
+import dwSS from './assets/dw-ss.jpg';
+import dwSSLg from './assets/dw-ss-lg.jpg';
+import brinkSS from './assets/brink-ss.jpg';
+import brinkSSLg from './assets/brink-ss-lg.jpg';
+import sstSS from './assets/sst-ss.jpg';
+import sstSSLg from './assets/sst-ss-lg.jpg';
+import ikeSS from './assets/ike-ss.jpg';
+import ikeSSLg from './assets/ike-ss-lg.jpg';
+
 const routes = {
   '/': {
     component: 'HOME',
@@ -71,6 +82,71 @@ const routes = {
   },
   '/projects/': {
     component: 'PROJECTS',
+    title: 'Donny West - About | Front End Engineer, JavaScript Developer, Web/Mobile Pro',
+    heading: 'Projects',
+    projects: [
+      {
+        title: 'The Elegant Office',
+        p: 'My day job - a complete custom e-commerce application and ecosystem.  The Elegant Office uses a custom React/Redux front-end application, with a smart API surface that decouples the backend, making it platform-agnostic.  The site currently runs on the Bigcommerce platform, and features a number of notable "firsts" and unique integrations.',
+        link: {
+          href: 'https://www.theelegantoffice.com/',
+          title: 'TheElegantOffice.com',
+          img: teoSS,
+          imgLg: teoSSLg,
+        },
+        technologies: 'React, Redux, Redux-Saga, Node.js, Webpack, Google Cloud, Ruby, Go, SASS',
+        notable: 'First Bigcommerce store using a React SPA, custom integrations with Algolia, Yotpo, Netsuite, imgix, ZMags, and more',
+      },
+      {
+        title: 'Donny West',
+        p: 'The site you\'re browsing at this very moment.  It\'s a simple enough site, but there\'s a modern tech stack behind it working to make it fast, responsive, and readable.  A custom Go server and React + Redux front-end application make this site vastly more complex than it needs to be, but it\'s all in good fun.',
+        link: {
+          href: '/',
+          title: 'DonnyWest.com',
+          img: dwSS,
+          imgLg: dwSSLg,
+        },
+        technologies: 'React, Redux, Node.js, JavaScript(ES6), Webpack, Go, PostCSS, CSS Modules',
+        notable: 'The only officially authorized Donny West website in the world',
+      },
+      {
+        title: 'Brink Commerce',
+        p: 'A simple static site/landing page.  This site was built from the ground-up for performance, using vanilla JavaScript and SASS only, no frameworks.  It\'s basic and minimal, and exceeded all performance goals.',
+        link: {
+          href: 'https://brinkcommerce.com/',
+          title: 'BrinkCommerce.com',
+          img: brinkSS,
+          imgLg: brinkSSLg,
+        },
+        technologies: 'JavaScript(ES6), SASS, Gulp, Rollup, Python',
+        notable: 'It\'s really, really fast',
+      },
+      {
+        title: 'slim-stencil-tools',
+        p: 'A lightweight and modern alternative utility library for the Bigcommerce Stencil theme framework.  This is a lean, performance-oriented replacement for Bigcommerce\'s standard library that removes third-party dependencies like jQuery.',
+        link: {
+          href: 'https://github.com/dwest-teo/slim-stencil-tools',
+          title: 'slim-stencil-tools on Github',
+          img: sstSS,
+          imgLg: sstSSLg,
+        },
+        technologies: 'JavaScript(ES6), Gulp, Webpack',
+        notable: 'Less than 1/3 the size of the original library it replaces',
+      },
+      {
+        title: 'ike.js',
+        p: 'A small, dependency-free JavaScript library that asynchronously loads SVG sprites and saves them to the client\'s local storage.',
+        link: {
+          href: 'https://github.com/dwest-teo/ike.js',
+          title: 'ike.js on Github',
+          img: ikeSS,
+          imgLg: ikeSSLg,
+        },
+        technologies: 'JavaScript(ES6), Gulp',
+        notable: 'A simple utility that does one thing well',
+      },
+    ],
+    moreToCome: true,
   },
 };
 
