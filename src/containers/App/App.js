@@ -21,17 +21,17 @@ class App extends Component {
       <Fragment forRoute="/">
         <div className="App min-vh-100 flex flex-column">
           <Header component={this.props.component} />
-            <div className="Content flex-auto bg-white-90">
-              <Fragment forRoute="/" withConditions={loc => loc.route === '/'}>
-                <Home />
-              </Fragment>
-              <Fragment forRoute="/about/">
-                <About />
-              </Fragment>
-              <Fragment forRoute="/projects/">
-                <Projects />
-              </Fragment>
-            </div>
+          <div className="Content flex-auto bg-white-90">
+            <Fragment forRoute="/" withConditions={loc => loc.route === '/'}>
+              <Home />
+            </Fragment>
+            <Fragment forRoute="/about/">
+              <About />
+            </Fragment>
+            <Fragment forRoute="/projects/">
+              <Projects />
+            </Fragment>
+          </div>
           <Footer />
         </div>
       </Fragment>
